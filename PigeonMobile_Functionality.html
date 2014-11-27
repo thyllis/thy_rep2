@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="assets/js/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+	<script src="assets/js/javascript.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	
+</head>
+
+<body>
+	<div class="container">
+		<!-- header area -->
+		<div id="header" class="row">
+			<div id="logo" class="col-md-4">
+				<img id="logo_img" src="assets/img/PigeonMobile_logo.png">
+			</div>
+		</div>
+		
+		<!-- content area -->
+		<div id="content" class="row">
+			<!-- left sidebar -->
+			<div id="left_navi" class="col-md-4 col-sm-4">
+				<nav role="navigation" class="navbar navbar-default">
+				<div class="navbar-header toggle">
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#nav_collapse">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="nav_collapse" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="PigeonMobile_Functionality.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_function.png"><span>Functionality</span></a>
+						</li>
+						<li>
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="mainmenu_icon" src="assets/img/icons/icon_white_content.png"><span>Content</span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#">Location</a></li>
+					            <li><a href="#">Home</a></li>
+					            <li><a href="#">QR Code</a></li>
+					            <li><a href="#">Image Gallery</a></li>
+					            <li><a href="#">About Us</a></li>
+					          </ul>
+				        </li>
+						<li><a href="PigeonMobile_Appearance.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_appearance.png"><span>Appearance</span></a></li>
+						<li><a href="PigeonMobile_Preview.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_preview.png"><span>Preview</span></a></li>
+						<li><a href="PigeonMobile_Publish.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_publish.png"><span>Publish</span></a></li>
+						<li><a href="PigeonMobile_Location.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_location.png"><span>Location</span></a></li>
+						<li><a href="PigeonMobile_Home.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_home.png"><span>Home</span></a></li>
+						<li><a href="PigeonMobile_QRCode.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_qrcode.png"><span>QR Code</span></a></li>
+						<li><a href="PigeonMobile_Gallery.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_gallery.png"><span>Image Gallery</span></a></li>
+						<li><a href="PigeonMobile_Aboutus.html"><img class="mainmenu_icon" src="assets/img/icons/icon_white_aboutus.png"><span>About Us</span></a></li>
+					</ul>
+				</div>
+				</nav>
+			</div> <!-- end of left_navi -->
+		
+			<div id="main" class="col-md-8">
+				<div class="title">
+					<h3>Create App</h3>
+					<span>lorem ipsum dolor sit amet</span>
+				</div>
+
+				<form role="form" class="form-horizontal">
+				<div id="main_appname" class="main_box">
+					<div id="appname_lower" class="main_lower">
+						
+						<div class="form-group">
+							<label for="appname_name" class="control-label col-sm-3">App Name</label>
+							<div class="col-lg-9 col-sm-9 col-12">
+								<input type="text" class="form-control" id="appname_name" placeholder="">
+							</div>
+						</div>
+					</div>
+				</div>
+			 	<!-- <button type="submit" id="abtus_submit" class="btn btn-default">Save Changes</button> -->
+			 	</form>
+
+			 	<div class="title">
+					<h3>After adding the tab, the list of tabs will be displayed as below</h3>
+					<span>lorem ipsum dolor sit amet</span>
+				</div>
+
+				<form role="form" class="form-horizontal">
+				<div id="main_apptabs" class="main_box table_mainbg">
+					<div id="apptabs_upper" class="main_upper upper_extra">
+						<h3>App Tabs</h3>
+						<a id="add_tab" class="btn" href="#newtab" data-toggle="modal"><img id="icon_addtab" src="assets/img/icons/icon_white_add.png">Add New Tab</a>
+					</div>
+
+					<div id="apptabs_lower" class="main_lower table">
+						<table id="apptab_table" class="cont_table">
+							<tr>
+								<th class="tabhead tabhead-bor">#</th>
+								<th class="tabhead tabhead-bor">Icon</th>
+								<th class="tabhead tabhead-bor">Active</th>
+								<th class="tabhead tabhead-bor">Name</th>
+								<th class="tabhead tabhead-bor">Tab Function</th>
+								<th class="tabhead">Action</th>
+							</tr>
+							<tr>
+								<td><img src="assets/img/icons/icon_grey_star.png"></td>
+								<td><img src="assets/img/icons/icon_grey_location.png"></td>
+								<td>YES</td>
+								<td>Location</td>
+								<td>Contact Tab</td>
+								<td><a class="btn edit_btn" href="">Edit</a>
+									<a class="btn delete_btn" href="">Delete</a></td>
+							</tr>
+							<tr>
+								<td><img src="assets/img/icons/icon_grey_star.png"></td>
+								<td><img src="assets/img/icons/icon_grey_home.png"></td>
+								<td>YES</td>
+								<td>Home</td>
+								<td>Home Tab</td>
+								<td><a class="btn edit_btn" href="">Edit</a>
+									<a class="btn delete_btn" href="">Delete</a></td>
+							</tr>
+							<tr>
+								<td><img src="assets/img/icons/icon_grey_star.png"></td>
+								<td><img src="assets/img/icons/icon_grey_order.png"></td>
+								<td>YES</td>
+								<td>Order</td>
+								<td>Food Ordering Tab</td>
+								<td><a class="btn edit_btn" href="">Edit</a>
+									<a class="btn delete_btn" href="">Delete</a></td>
+							</tr>
+							<tr>
+								<td><img src="assets/img/icons/icon_grey_star.png"></td>
+								<td><img src="assets/img/icons/icon_grey_qrcode.png"></td>
+								<td>YES</td>
+								<td>QR Coupon</td>
+								<td>QR Coupons Tab</td>
+								<td><a class="btn edit_btn" href="">Edit</a>
+									<a class="btn delete_btn" href="">Delete</a></td>
+							</tr>
+							<tr>
+								<td><img src="assets/img/icons/icon_grey_star.png"></td>
+								<td><img src="assets/img/icons/icon_grey_gallery.png"></td>
+								<td>YES</td>
+								<td>Image Gallery</td>
+								<td>Image Gallery Tab</td>
+								<td><a class="btn edit_btn" href="">Edit</a>
+									<a class="btn delete_btn" href="">Delete</a></td>
+							</tr>
+							<tr>
+								<td><img src="assets/img/icons/icon_grey_star.png"></td>
+								<td><img src="assets/img/icons/icon_grey_aboutus.png"></td>
+								<td>YES</td>
+								<td>About Us</td>
+								<td>Info Tab (1-tier)</td>
+								<td><a class="btn edit_btn" href="">Edit</a>
+									<a class="btn delete_btn" href="">Delete</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<button type="submit" id="upload_submit" class="btn btn-default submit">Save Changes</button>
+				</form>
+			</div> <!-- end of main -->
+		</div>
+	</div>
+
+	<div class="modal fade" id="newtab" role="dialog">
+		<div class="modal-dialog">
+			<div id="popup_newtab" class="modal-content">
+				<form role="form" class="form-horizontal">
+					<div id="newtab_header" class="modal-header">
+						<h3>Add New tab</h3>
+					</div>
+					<div id="newtab_body" class="modal-body">
+						<div class="form-group">
+							<label for="newtab_title" class="control-label col-sm-3 col-xs-12">Tab Title</label>
+							<div class="col-lg-9 col-sm-9 col-12">
+								<input type="text" class="form-control" id="newtab_title" placeholder="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="newtab_function" class="control-label col-sm-3 col-xs-12">Tab Function</label>
+							<div class="col-lg-6 col-sm-6 col-12">
+								<select id="newtab_function" class="form-control dropdown">
+									<option value="" disabled="" selected="">Choose</option>
+									<option value="country 1">Country 1</option>
+									<option value="country 2">Country 2</option>
+									<option value="country 3">Country 3</option>
+									<option value="country 4">Country 4</option>
+								</select>
+							</div>
+							<div class="col-lg-3 col-sm-3 col-12">
+								<label id="activetab_checkbox">
+									<input type="checkbox" value="is_activetab"><span class="checkbox_span">Active Tab</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="newtab_icon" class="control-label col-sm-3 col-xs-12">Upload Custom Icon</label>
+							<div class="col-lg-9 col-sm-9 col-12">
+								<div id="newtab_icon" class="input-group">
+					                <span class="input-group-btn">
+					                	<input type="text" class="form-control" placeholder="" readonly>
+					                    <span class="btn btn-primary btn-file browse">
+					                        Choose File<input type="file" multiple> 
+					                    </span>
+					                </span>
+					                
+					            </div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" id="newtab_submit" class="btn btn-default popup_submit">Save Changes</button>
+						<a class="btn btn-primary popup_cancel" data-dismiss="modal">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
